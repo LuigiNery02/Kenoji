@@ -1,0 +1,112 @@
+body {
+    font-family: sans-serif;
+    background-image: radial-gradient(ellipse at 0 0,#fff5ad,#ffae00);
+    min-height: 100vh;
+    overflow-y: hidden;
+}
+
+#wrapper header:nth-child(1){
+    margin-left: 5em;
+    margin-top: 3em;
+}
+
+h1{
+    margin-left: 1.4em;
+    margin-top: 2em;
+    font-size: 3.45em;
+    width: 62%;
+}
+
+h1 strong{
+    text-transform: uppercase;
+    color: rgb(194, 34, 34);
+}
+
+p{
+    margin-left: 5em;
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
+.source{
+    margin-left: 6em;
+    border-radius: 4px;
+    height: 2.5em;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: inherit;
+}
+
+.search{
+    margin-left: 1em;
+    border-radius: 4px;
+    height: 3em;
+    width: 6em;
+    border: none;
+    color: white;
+    background-color: rgb(22, 22, 134);
+    font-family: inherit;
+}
+
+main{
+    display: flex;
+    gap: 2rem;
+}
+
+main > *{
+    flex: 1 0 0;
+}
+
+.animation{
+    position: relative;
+}
+
+.animation img{
+    position: absolute;
+}
+
+.animation img:nth-child(1){
+    left: 10px;
+    top: 150px;
+    animation: topleft 2s infinite alternate;
+}
+
+.animation img:nth-child(2){
+    right: 10px;
+    top: 150px;
+    animation: topleft 3s 0.5s infinite alternate;
+}
+
+.animation img:nth-child(3){
+    right: 150px;
+    top: 15px;
+    animation: topleft 2s infinite alternate;
+}
+
+.animation img:nth-child(4){
+    left: 100px;
+    bottom: -100px;
+    animation: topleft 4s 0.5s infinite alternate;
+}
+
+.animation img:nth-child(5){
+    left: 500px;
+    bottom: 250px;
+    animation: topleft 3s infinite alternate;
+}
+
+.animation img:nth-child(6){
+    right: 25px;
+    bottom: -100px;
+    animation: topleft 4s infinite alternate;
+}
+
+@keyframes topleft{
+    from{
+        transform: translate(0, 0);
+    }
+    to{
+        transform: translate(-10px, -30px);
+    }
+}
